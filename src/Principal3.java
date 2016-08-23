@@ -78,11 +78,15 @@ public class Principal3 extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("JasmineUPC", 2, 24)); // NOI18N
         jLabel4.setText("Resultado de Bonificación");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 80, -1, -1));
+
+        txtResultado.setEditable(false);
         getContentPane().add(txtResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 110, 70, -1));
 
         jLabel5.setFont(new java.awt.Font("JasmineUPC", 2, 24)); // NOI18N
         jLabel5.setText("Monto total a pagar al trabajador");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, -1, -1));
+
+        txtMontoTotalAPagarAlTrabajador.setEditable(false);
         getContentPane().add(txtMontoTotalAPagarAlTrabajador, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 160, 90, -1));
 
         cmbCalcular.setText("CALCULAR");
@@ -111,8 +115,8 @@ public class Principal3 extends javax.swing.JFrame {
     private void cmbCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbCalcularActionPerformed
         // TODO add your handling code here:
         
-         String  num1, num2, res;
-        double n1=1,n2=1,resultado = 0, total;
+         String  num1, num2, resul,res;
+        double n1=0,n2=0,resultado = 0, total;
         
         
         
@@ -139,8 +143,8 @@ public class Principal3 extends javax.swing.JFrame {
         txtResultado.setText(res);
         
         total = resultado + n1;
-        res= String.valueOf(total);
-        txtMontoTotalAPagarAlTrabajador.setText(res);
+        resul= String.valueOf(total);
+        txtMontoTotalAPagarAlTrabajador.setText(resul);
         
     }//GEN-LAST:event_cmbCalcularActionPerformed
 
